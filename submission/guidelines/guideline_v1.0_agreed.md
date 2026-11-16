@@ -138,22 +138,22 @@ IAA chỉ phản ánh đồng thuận trên các cặp box ghép được; phả
 
 | Mã | Điểm khác nhau giữa các bản cá nhân | Phương án tổng hợp đang ghi | Xác nhận nhóm |
 |---|---|---|---|
-| D01 | `img_002`: 102 gán các xe thật trên xe chở riêng; 104 không gán và gộp vào xe chở. | Mỗi xe con thật có `car` riêng; một `truck` cho tổ hợp kéo-rơ-moóc, không nới theo hàng. | Chưa xác nhận |
-| D02 | `img_009`: 102 loại minibus/bus; 104 đề xuất minibus → van, bus lớn → truck hoặc thêm lớp. | Giữ taxonomy 6 lớp: chỉ van đúng cấu tạo mới là `van`; bus/minibus chuyên dụng không gán. | Chưa xác nhận |
-| D03 | 102 chia mức che 0 / 30 / 70%; 104 chia 10 / 40 / 75%. | Mốc từ 102: 0%, 30%, 70%. | Chưa xác nhận |
-| D04 | 102 gán người thật nhìn trực tiếp xuyên kính khi đủ rõ; 104 loại người trong xe kín qua kính. | Gán khi nhìn trực tiếp, đủ rõ, ≥20 px; nếu thiếu bằng chứng ghi issue. | Chưa xác nhận |
-| D05 | 104 đề xuất `ignore_region` cho từng vật nhỏ; 102 chỉ dùng cho cụm không tách được. | Vật nhỏ đơn lẻ bỏ box; ignore cho cụm ≥3 vật mục tiêu không thể tách ổn định. | Chưa xác nhận |
-| D06 | 104 ghi hàng/xe được chở nằm trong box xe chở; 102 tách xe thật và loại hàng rời khỏi box. | Tách xe thật và không nới box xe chở theo hàng; box có thể chồng nhau. | Chưa xác nhận |
+| D01 | `img_002`: 102 gán các xe thật trên xe chở riêng; 104 không gán và gộp vào xe chở. | Mỗi xe con thật có `car` riêng; một `truck` cho tổ hợp kéo-rơ-moóc, không nới theo hàng. | Đã xác nhận |
+| D02 | `img_009`: 102 loại minibus/bus; 104 đề xuất minibus → van, bus lớn → truck hoặc thêm lớp. | Giữ taxonomy 6 lớp: chỉ van đúng cấu tạo mới là `van`; bus/minibus chuyên dụng không gán. | Đã xác nhận |
+| D03 | 102 chia mức che 0 / 30 / 70%; 104 chia 10 / 40 / 75%. | Mốc từ 102: 0%, 30%, 70%. | Đã xác nhận |
+| D04 | 102 gán người thật nhìn trực tiếp xuyên kính khi đủ rõ; 104 loại người trong xe kín qua kính. | Gán khi nhìn trực tiếp, đủ rõ, ≥20 px; nếu thiếu bằng chứng ghi issue. | Đã xác nhận |
+| D05 | 104 đề xuất `ignore_region` cho từng vật nhỏ; 102 chỉ dùng cho cụm không tách được. | Vật nhỏ đơn lẻ bỏ box; ignore cho cụm ≥3 vật mục tiêu không thể tách ổn định. | Đã xác nhận |
+| D06 | 104 ghi hàng/xe được chở nằm trong box xe chở; 102 tách xe thật và loại hàng rời khỏi box. | Tách xe thật và không nới box xe chở theo hàng; box có thể chồng nhau. | Đã xác nhận |
 
 **Phiếu xác nhận nhóm:**
 
 - [ ] 101 đã đọc các mục D01–D06 và đồng ý bản chốt (hoặc ghi sửa đổi).
 - [ ] 102 đã đọc các mục D01–D06 và đồng ý bản chốt (hoặc ghi sửa đổi).
 - [ ] 104 đã đọc các mục D01–D06 và đồng ý bản chốt (hoặc ghi sửa đổi).
-- [ ] Thành viên còn lại của nhóm đã đọc, đồng ý, hoặc ghi rõ ý kiến. Nếu có guideline cá nhân của thành viên này, bổ sung trước khi khóa.
+- [ ] 103 đã đọc các mục D01–D06 và đồng ý bản chốt (hoặc ghi sửa đổi).
 - [ ] Đã thống nhất và sửa mọi hàng D01–D06 còn thay đổi.
 - [ ] `submission/taxonomy.json` đã đặt `version = v1.0`, đồng bộ định nghĩa lớp/thuộc tính **và giữ nguyên hoàn toàn object `rules`**.
 - [ ] Đã chạy thành công `python scripts/make_cvat_labels.py` và kiểm `cvat/labels_generated.json`.
 - [ ] Nhóm công bố khóa guideline + taxonomy v1.0 trước khi phân ảnh và gán nhãn độc lập.
 
-**Chỉ khi các bước trên thực sự xong, cập nhật phần đầu tài liệu thành `Trạng thái: ĐÃ THỐNG NHẤT — KHÓA v1.0`, ghi ngày và mã người xác nhận.**
+**Chỉ khi các bước trên thực sự xong, cập nhật phần đầu tài liệu thành `Trạng thái: ĐÃ THỐNG NHẤT — KHÓA v1.0`, 16/11/2026.**
