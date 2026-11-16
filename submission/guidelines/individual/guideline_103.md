@@ -1,4 +1,4 @@
-# Guideline gán nhãn — v0.1-candidate — 102
+# Guideline gán nhãn — v0.1-candidate — 103
 
 - Phiên bản: `v0.1-candidate` (bản cá nhân, trước khi họp nhóm)
 - Ngày: 2026-11-16
