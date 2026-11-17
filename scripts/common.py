@@ -430,13 +430,13 @@ def read_csv(path: Path) -> List[dict]:
 def write_csv(path: Path, header: List[str], rows: List[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", encoding="utf8", newline="") as f:
-        w = csv.DictWriter(f, fieldnames=header, extrasaction="ignore")
+        w = csv.DictWriter(f, fieldnames=header, extrasaction="ignore", lineterminator="\n")
         w.writeheader()
         w.writerows(rows)
 
 
 def rel(p: Path) -> str:
     try:
-        return str(p.relative_to(ROOT))
+        return p.relative_to(ROOT).as_posix()
     except ValueError:
-        return str(p)
+        return p.as_posix()
