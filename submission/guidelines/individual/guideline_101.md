@@ -54,10 +54,10 @@ Các trường hợp chưa chắc chắn cần đánh dấu `can_review` và ghi
 
 | Ảnh | Tình huống | Rule ID | Quyết định | Lý do |
 |---|---|---|---|---|
-| img_004 | Xe tuk-tuk ba bánh | R03 | Cần tự chốt | Chưa có lớp riêng |
+| img_004 | Xe tuk-tuk ba bánh | R03 | Xe tuk-tuk sẽ được xử lý theo lớp nào hoặc bỏ qua? | Chưa có lớp riêng |
 | img_017 | Tượng người cưỡi ngựa | R06 | Cần tự chốt | Phân biệt người thật và tượng |
-| img_020 | Ô tô trong gương chiếu hậu | R06 | Cần tự chốt | Trường hợp phản chiếu |
-| img_021 | Xe máy và người chen chúc | R04, R08 | Cần tự chốt | Nhiều vật bị che |
+| img_020 | Ô tô trong gương chiếu hậu | R06 | Có gán nhãn ô tô phản chiếu trong gương không? | Trường hợp phản chiếu |
+| img_021 | Xe máy và người chen chúc | R04, R08 | Xử lý người và xe máy bị che khuất như thế nào? | Nhiều vật bị che |
 | img_023 | Xe xích lô | R03 | Cần tự chốt | Chưa có lớp riêng |
 | img_027 | Vật trưng bày hình xe bán tải | R06 | Cần tự chốt | Phân biệt vật thật và vật mô phỏng |
 | img_033 | Ma-nơ-canh và hình quảng cáo | R06 | Cần tự chốt | Phân biệt người thật và vật thể giả |
